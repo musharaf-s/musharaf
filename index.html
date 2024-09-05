@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Montserrat", sans-serif;
+    }
+    body{
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: rgb(55, 160, 0);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+
+    }
+
+    nav a {
+      margin: 30px;
+      color: aliceblue;
+      text-decoration: none;
+    }
+
+    .op {
+      height: 800px;
+      background-color: rgb(97, 118, 129);
+      display: flex;
+      align-items: center;
+      line-height: 80px;
+
+    }
+
+    .name {
+      margin-left: 200px;
+    }
+
+    .po {
+      font-size: 24px;
+
+    }
+
+    .jk {
+      font-size: 65px;
+    }
+
+    .kl {
+      font-size: 28px;
+    }
+
+    .ty {
+      text-align: center;
+      color: rgb(55, 160, 0);
+      font-size: 46px;
+      margin: 80px;
+
+    }
+
+    .ol {
+      display: flex;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    .about-me {
+      width: 100%;
+      height: 300px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about-me h2 {
+      font-size: 2.5em;
+      color: #2FAF0D;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .about-text {
+      width: 45%;
+      text-align: left;
+    }
+
+    .about-text h3 {
+      font-size: 1.8em;
+      color: #2FAF0D;
+      margin-bottom: 10px;
+    }
+
+    .about-text p {
+      font-size: 1em;
+      line-height: 1.6em;
+      margin-bottom: 20px;
+    }
+
+    .download-button {
+    
+      color:#2FAF0D;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .download-button:hover{
+      background-color: #2FAF0D;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    .skills {
+      width: 50%;
+    }
+
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill span {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 1.1em;
+    }
+
+    .progress {
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      overflow: hidden;
+      height: 15px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      color: white;
+      text-align: right;
+      padding-right: 10px;
+      line-height: 15px;
+      font-size: 0.9em;
+      border-radius: 5px;
+    }
+
+    .progress-bar.html {
+      width: 60%;
+      background-color: #2FAF0D;
+    }
+
+    .progress-bar.bootstrap {
+      width: 40%;
+      background-color: #2FAF0D;
+    }
+
+    iframe {
+      text-align: center;
+      width: 700px;
+      height: 500px;
+
+
+    }
+
+    .map {
+      display: block;
+      margin: 0px auto;
+      margin-bottom: 100px;
+    }
+
+    .lo {
+      display: flex;
+      flex-direction: column;
+      width: 50px;
+
+
+    }
+
+    .iu {
+      text-align: center;
+
+    }
+
+    .fd {
+      width: 100px;
+    }
+
+    .mn {
+      text-align: center;
+      color: rgb(47, 175, 13);
+      font-size: 46px;
+      margin-bottom: 40px;
+    }
+
+    .az {
+      text-align: center;
+      color: rgb(47, 175, 13);
+      font-size: 46px;
+      margin-bottom: 40px;
+    }
+
+    .io {
+      display: flex;
+      justify-content: center;
+
+
+
+    }
+
+    .fr {
+
+      margin-top: 20px;
+      background-color: #2FAF0D;
+      height: 50px;
+      width: 100%;
+      color: white;
+      padding-top: 40px;
+      padding-left: 100px;
+    }
+
+    .lm {
+      width: 350px;
+      height: 30px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid rgb(47, 175, 13);
+
+    }
+
+    .ph {
+      width: 350px;
+      height: 30px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid rgb(47, 175, 13);
+    }
+
+    .vb {
+      width: 380px;
+      height: 30px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid rgb(47, 175, 13);
+    }
+
+    .ml {
+      width: 380px;
+      height: 30px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid rgb(47, 175, 13);
+    }
+
+    .lo {
+      width: 770px;
+      height: 150px;
+      border-radius: 5px;
+      border: 1px solid rgb(47, 175, 13);
+      padding: 10px;
+    }
+
+    .gb {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+    }
+    .sd {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .jh {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .lp {
+
+      width: 150px;
+      height: 40px;
+      border-radius: 5px;
+      border: 1px solid rgb(47, 175, 13);
+      padding: 10px 20px;
+      
+    }
+    .lp:hover{
+      background-color: #2FAF0D;
+      color:white;
+      border: none;
+      
+      cursor: pointer;
+      border-radius: 5px;
+      
+      
+    }
+    
+
+    .project {
+      height: 200px;
+      width: 300px;
+      border: 1px solid rgb(47, 175, 13);
+
+    }
+
+    .pgrid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-bottom: 300px;
+      padding-left: 50px;
+    }
+
+    .sa {
+      width: 100%;
+      height: 300px;
+    }
+
+    .prot {
+      text-align: center;
+      color: rgb(47, 175, 13);
+      margin-bottom: 40px;
+      font-size: 40px;
+    }
+
+    
+
+  
+
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2 class="about"> About<span style="background-color: aliceblue;color: rgb(55, 160, 0);">Me</span></h2>
+    <nav>
+      <a href="#home"> Home</a>
+      <a href="#about1">about</a>
+      <a href="#protfolio">Protfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <section id="home"       class="op">
+    <div class="name">
+      <h2 class="po">Hello,stanger!</h2>
+      <h1 class="jk">I'M MUSHARAF SADHIK</h1>
+      <h3 class="kl">FSSA STUDENT</h3>
+    </div>
+  </section>
+  
+
+
+
+    <section  id="about1"            class="about-me">
+      <h2>About Me</h2>
+      <div class="content">
+        <div class="about-text">
+          <h3>Know About Me</h3>
+          <p>Hello! I'm Musharaf.my educational journey started at JH matric primary school LALPET 12th standard at govt
+            higher secondary school LALPET.
+            .</p>
+          <button class="download-button">Download</button>
+        </div>
+        <div class="skills">
+          <div class="skill">
+            <span>HTML</span>
+            <div class="progress">
+              <div class="progress-bar html">60%</div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>CSS</span>
+            <div class="progress">
+              <div class="progress-bar bootstrap">40%</div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </section>
+  <section   id="protfolio"           class="sa">
+    <h2 class="prot">Protfolio</h2>
+    <div class="pgrid">
+      <div class="project"></div>
+      <div class="project"></div>
+      <div class="project"></div>
+      <div class="project"></div>
+
+
+    </div>
+  </section>
+  <section id="contact">
+    <div>
+      <h1 class="mn">Contact</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.9399644384803!2d80.30000580108769!3d13.24895943303216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5271d62b0d6e91%3A0x30cef16485e22aaa!2zQ2hpZGFtYmFyYW0gTmFkYXJhamFyIEF5eWEgRmFtaWx5IFRydXN0IOCumuCuv-CupOCuruCvjeCuquCusOCuruCvjSDgrqjgrp_grrDgrr7grpzgrrDgr40g4K6Q4K6v4K6-IOCuleCvgeCun-CvgeCuruCvjeCuqiDgroXgrrHgrpXgr43grpXgrp_gr43grp_grrPgr4g!5e0!3m2!1sen!2sin!4v1724178603667!5m2!1sen!2sin"
+        width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+    </div>
+    <div class="on">
+
+      <div class="io">
+        <form class="gb" action="#" method="post">
+          <div class="sd">
+            <input class="lm" type="text" name="name" placeholder="Name" required>
+            <input class="vb" type="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="jh">
+            <input class="ph" type="text" name="subject" placeholder="Subject" required>
+            <input class="ml" type="tel" name="phone" placeholder="Phone" required>
+          </div>
+          <div class="form-group">
+            <textarea class="lo" name="message" placeholder="Message" required></textarea>
+          </div>
+          <div class="group">
+            <button class="lp" type="button">Submit</button>
+          </div>
+      </div>
+      </form>
+      <footer class="fr">
+        ProperTheme &copy; 2017. All Rights Reserved.
+        
+        <a href="#"><i class="fa-brands fa-facebook" style="color: #f7f7f7;"></i></a>
+
+        <a href="#"><i class="fa-brands fa-twitter" id="icon" style="color: #ffffff;"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin" id="icon" style="color: #ffffff;"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram" id="icon" style="color: #ffffff;"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest-p" id="icon" style="color: #ffffff;"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube" id="icon" style="color: #ffffff;"></i></a>
+      </footer>
+
+
+    </div>
+  </section>
+</body>
+
+</html>
