@@ -19,6 +19,7 @@
     body{
       overflow-x: hidden;
       width: 100%;
+      
     }
 
     header {
@@ -26,10 +27,13 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      position: sticky;top: 0;
     }
 
     nav {
       display: flex;
+      
+      
 
     }
 
@@ -37,6 +41,7 @@
       margin: 30px;
       color: aliceblue;
       text-decoration: none;
+
     }
 
     .op {
@@ -49,9 +54,21 @@
     }
 
     .name {
+      margin-top: 100px;
       margin-left: 200px;
       color: black;
     }
+    .container{
+      font-weight: 700;
+
+      font-size: 30px;
+    }
+    .first-text{
+      color: white;
+    }
+.secend-text{
+     color:             rgb(55, 160, 0);
+}
 
     .po {
       font-size: 24px;
@@ -79,6 +96,9 @@
     .ol {
       display: flex;
     }
+    .welcome{
+      border-radius:50px;
+    }
 
     body {
       font-family: Arial, sans-serif;
@@ -96,18 +116,21 @@
       margin: 50px auto;
       padding: 20px;
       text-align: center;
+      
+      
     }
 
     .about-me h2 {
       font-size: 2.5em;
       color: #2FAF0D;
-      margin-bottom: 20px;
+      
     }
 
     .content {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+      margin-top: 40px;
     }
 
     .about-text {
@@ -135,15 +158,19 @@
       cursor: pointer;
       border-radius: 5px;
       font-size: 1em;
+      box-shadow: 0px 0px 5px  2px      ;
+      background-color:white;
+      text-decoration: none;
     }
     .download-button:hover{
       background-color: #2FAF0D;
-      color: #fff;
+      color: white;
       border: none;
       padding: 10px 20px;
       cursor: pointer;
       border-radius: 5px;
       font-size: 1em;
+      
     }
     .skills {
       width: 50%;
@@ -163,7 +190,7 @@
     .progress {
       background-color: #e0e0e0;
       border-radius: 5px;
-      overflow: hidden;
+      /* overflow: hidden; */
       height: 15px;
     }
 
@@ -182,7 +209,7 @@
       background-color: #2FAF0D;
     }
 
-    .progress-bar.bootstrap {
+    .progress-bar.css {
       width: 40%;
       background-color: #2FAF0D;
     }
@@ -198,7 +225,9 @@
     .map {
       display: block;
       margin: 0px auto;
-      margin-bottom: 100px;
+      margin-bottom: 70px;
+      width: 1000px;
+      margin-top: 40px;
     }
 
     .lo {
@@ -222,7 +251,7 @@
       text-align: center;
       color: rgb(47, 175, 13);
       font-size: 46px;
-      margin-bottom: 40px;
+      
     }
 
     .az {
@@ -248,7 +277,7 @@
       width: 100%;
       color: white;
       padding-top: 40px;
-      padding-left: 100px;
+      
     }
 
     .lm {
@@ -257,8 +286,10 @@
       padding: 10px;
       border-radius: 5px;
       border: 1px solid rgb(47, 175, 13);
+      
 
     }
+    
 
     .ph {
       width: 350px;
@@ -315,6 +346,7 @@
       width: 150px;
       height: 40px;
       border-radius: 5px;
+      background-color: white;
       border: 1px solid rgb(47, 175, 13);
       padding: 10px 20px;
       
@@ -331,11 +363,18 @@
     }
     
 
-    .project {
+    .project:hover {
       height: 200px;
       width: 300px;
-      border: 1px solid rgb(47, 175, 13);
+      border: 2px solid rgb(47, 175, 13);
+      
+      
+      border-radius: 20px ;
+      
 
+    }
+    .pro{
+      border-radius: 20px;
     }
 
     .pgrid {
@@ -348,29 +387,93 @@
     .sa {
       width: 100%;
       height: 300px;
+      margin: 40px;
     }
 
     .prot {
       text-align: center;
       color: rgb(47, 175, 13);
-      margin-bottom: 40px;
+      margin-bottom:px;
       font-size: 40px;
     }
 
-    .fr{
-      display: flex;
-    gap: 50%;
-    }
-    #icon{
-      margin-left: 40px;
-    }
+
+    
+    
    .cd{
   background-color:rgb(47, 175, 13) ;
   border-radius:1px ;
   
    }
+  .va{
+    margin: 0 auto;
+    text-align: center;
+  display: block;
+  }
+  .lq{
+    margin: 0 auto;
+    text-align: center;
+  display: block;
+  }
+  .of{
+    align-items: center;
+    justify-content: center;
+  }
+  .footer{
+    display:flex;
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+  margin-left: 800px;
+    gap: 40px;
+  }
+  .p{
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .jm{
+    display: flex;
+  }
+  .plus{
+    color: #2FAF0D;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px;
+  }
+  #icon:hover{
+border:2px solid;
+border-radius:  30px  40px 3px;
+height: 20px;
+width: 30px;
+font-size: small;
+
+  }
+  #contact{
+    margin-top: 60px;
+  }
+  .line{
+    border-bottom: 1px solid#2FAF0D ;
+    box-shadow: 0px 0px  2px #2FAF0D;
+  }
+
+@media(
+  max-width:750px
+  
+) 
+{
+  .name{
+    
+    padding: 0px  auto;
+    margin: 0px  auto;
+    
+  }
   
     
+  
+}
+  
   </style>
 </head>
 
@@ -385,11 +488,21 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
-  <section id="home"       class="op">
-    <div class="name">
+  <section id="home" 
+        class="op">
+        <div  class="jm">
+      <div class="name">
       <h2 class="po">Hello,stanger!</h2>
       <h1 class="jk">I'M MUSHARAF SADHIK</h1>
-      <h3 class="kl">FSSA STUDENT</h3>
+      <div class="container">
+        <span class="first-text">I'M FSSA</span>
+        <span class="secend-text">STUDENT</span>
+      
+      </div>
+    </div >
+    <div>
+<img src="./assets/welcome pic.jpeg"      width="400px"      height="500px" class="welcome"             alt="">
+    </div>
     </div>
   </section>
   
@@ -397,14 +510,17 @@
 
 
     <section  id="about1"            class="about-me">
-      <h2>About Me</h2>
+      <div><h2>About Me</h2>
+        <img src="./assets/Screenshot 2024-09-18 191825.png" width="150px"  alt=""></div>
+                   
       <div class="content">
         <div class="about-text">
           <h3>Know About Me</h3>
           <p>Hello! I'm Musharaf.my educational journey started at JH matric primary school LALPET 12th standard at govt
             higher secondary school LALPET.
             .</p>
-          <button class="download-button">Download</button>
+          <!-- <button  id="button"              class="download-button">Download</button> -->
+        <a href=""   download="resume"      class="download-button"                       >Download</a>
         </div>
         <div class="skills">
           <div class="skill">
@@ -416,37 +532,49 @@
           <div class="skill">
             <span>CSS</span>
             <div class="progress">
-              <div class="progress-bar bootstrap">40%</div>
+              <div class="progress-bar css">40%</div>
             </div>
           </div>
 
 
         </div>
       </div>
-    
+      
+
+      
 
 
   </section>
+<div class="line">
 
+</div>
     
   
   <section   id="protfolio"           class="sa">
-    <h2 class="prot">Portfolio</h2>
+   <div> <h2 class="prot">project</h2>
+ <img src="./assets/Screenshot 2024-09-18 191825.png" width="150px" class="va"      alt=""> </div>
     <div class="pgrid">
-      <div class="project"></div>
-      <div class="project"></div>
-      <div class="project"></div>
-      <div class="project"></div>
+      <div class="project"> <img src="./assets/Screenshot 2024-09-21 134634.png"  class="pro"  width="300px" height="200px"  alt="">
+      <div class=" image">
+<p></p>
+      </div>
+    </div>
+      <div class="project"><img src="./assets/Screenshot 2024-09-21 140248.png"   class="pro"            width="300px"   height="200px"                 alt=""></div>
+      <div class="project"><img src="./assets/bulb.jpg"   width="300px"  height="200px"                       alt=""></div>
+      <div class="project"><h2 class="plus">+</h2></div>
 
 
     </div>
   </section>
+  <div class="line"></div>
   <section id="contact">
-    <div>
+    <div><div>
       <h1 class="mn">Contact</h1>
+      <img src="./assets/Screenshot 2024-09-18 191825.png"   width="150px"      class="lq"           alt=""></div>
+    </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.9399644384803!2d80.30000580108769!3d13.24895943303216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5271d62b0d6e91%3A0x30cef16485e22aaa!2zQ2hpZGFtYmFyYW0gTmFkYXJhamFyIEF5eWEgRmFtaWx5IFRydXN0IOCumuCuv-CupOCuruCvjeCuquCusOCuruCvjSDgrqjgrp_grrDgrr7grpzgrrDgr40g4K6Q4K6v4K6-IOCuleCvgeCun-CvgeCuruCvjeCuqiDgroXgrrHgrpXgr43grpXgrp_gr43grp_grrPgr4g!5e0!3m2!1sen!2sin!4v1724178603667!5m2!1sen!2sin"
-        width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </div>
     <div class="on">
@@ -469,20 +597,21 @@
           </div>
       </div>
       </form>
-      <footer class="fr">
-        ProperTheme &copy; 2017. All Rights Reserved.
-        <div class="vh">
-        <a href="#"><i class="fa-brands fa-facebook" style="color: #f7f7f7;"></i></a>
+      <footer class="fr">      <div class="footer">               <div class="p">
+         <p class="of">   ProperTheme &copy; 2017. All Rights Reserved.</p></div>
+         <div class="icons">
+    
+       <a href="https://m.facebook.com/profile.php?id=61550569506875&name=xhp_nt__fb__action__open_user"><i class="fa-brands fa-facebook-f"  id="icon"    style="color: #f7f7f7; "     ></i></a>
 
-        <a href="#"><i class="fa-brands fa-twitter"            id="icon" style="color: #ffffff;"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"              id="icon" style="color: #ffffff;"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"          id="icon" style="color: #ffffff;"></i></a>
-        <a href=""><i class="fa-brands fa-pinterest-p"         id="icon" style="color: #ffffff;"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"             id="icon" style="color: #ffffff;"></i></a></div>
+        <!-- <a href="#"><i class="fa-brands fa-twitter"            id="icon" style="color: #ffffff;"    ></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"              id="icon" style="color: #ffffff;"></i></a> -->
+        <a href="https://instagram.com/_maggy_boy_/"><i class="fa-brands fa-instagram"          id="icon" style="color: #ffffff;"></i></a>
+        <!-- <a href=""><i class="fa-brands fa-pinterest-p"         id="icon" style="color: #ffffff;"></i></a> -->
+        <a href=https://m.youtube.com/feed/library><i class="fa-brands fa-youtube"             id="icon" style="color: #ffffff;"></i></a></div></div>
       </footer>
 
 
-    </div>
+    
   </section>
 </body>
 
