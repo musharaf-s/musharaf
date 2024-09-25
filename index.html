@@ -28,19 +28,22 @@
       justify-content: space-around;
       align-items: center;
       position: sticky;top: 0;
+      width: 100%;
+    
     }
 
-    nav {
+    nav{
       display: flex;
       
       
 
     }
 
-    nav a {
+    nav a{
       margin: 30px;
       color: aliceblue;
       text-decoration: none;
+      
 
     }
 
@@ -288,8 +291,18 @@
       border-radius: 5px;
       border: 1px solid rgb(47, 175, 13);
       
+      
+      
+      
 
     }
+.lm:focus{
+  outline:   0px solid ;
+
+    ;
+      
+      box-shadow: 0px 0px 5px  2px     rgb(47, 175, 13)  ;
+}
     
 
     .ph {
@@ -299,6 +312,12 @@
       border-radius: 5px;
       border: 1px solid rgb(47, 175, 13);
     }
+    .ph:focus{
+      outline:   0px solid ;
+
+    
+      box-shadow: 0px 0px 5px  2px     rgb(47, 175, 13); 
+    }
 
     .vb {
       width: 380px;
@@ -306,6 +325,10 @@
       padding: 10px;
       border-radius: 5px;
       border: 1px solid rgb(47, 175, 13);
+    }
+    .vb:focus{
+      outline:   0px solid ; 
+      box-shadow: 0px 0px 5px  2px     rgb(47, 175, 13) ;
     }
 
     .ml {
@@ -315,6 +338,10 @@
       border-radius: 5px;
       border: 1px solid rgb(47, 175, 13);
     }
+    .ml:focus{
+      outline:   0px solid ;
+     box-shadow: 0px 0px 5px  2px     rgb(47, 175, 13) ;
+    }
 
     .lo {
       width: 770px;
@@ -323,6 +350,10 @@
       border: 1px solid rgb(47, 175, 13);
       padding: 10px;
     }
+    .lo:focus{
+      outline:   0px solid ;
+   box-shadow: 0px 0px 5px  2px     rgb(47, 175, 13) ;
+    }
 
     .gb {
       display: flex;
@@ -330,10 +361,11 @@
       gap: 30px;
 
     }
-    .sd {
+    .sd{
       display: flex;
       flex-direction: row;
       gap: 20px;
+
     }
 
     .jh {
@@ -349,6 +381,7 @@
       border-radius: 5px;
       background-color: white;
       border: 1px solid rgb(47, 175, 13);
+      box-shadow: rgb(47, 175, 13);
       padding: 10px 20px;
       
     }
@@ -386,7 +419,7 @@
     }
 
     .sa {
-      width: 100%;
+      /* width: 100%; */
       height: 300px;
       margin: 40px;
     }
@@ -419,6 +452,7 @@
   .of{
     align-items: center;
     justify-content: center;
+    margin-left: 60px;
   }
   .footer{
     display:flex;
@@ -458,7 +492,9 @@ font-size: small;
     border-bottom: 1px solid#2FAF0D ;
     box-shadow: 0px 0px  2px #2FAF0D;
   }
-
+.p1:hover{
+color: #333;
+}
 @media(
   max-width:750px
   
@@ -484,17 +520,17 @@ font-size: small;
     
     <h2 class="about"> About<span style="background-color: aliceblue;color: rgb(55, 160, 0);">Me</span></h2>
     <nav class="er">
-      <a href="#home"> Home</a>
-      <a href="#about1">About</a>
-      <a href="#protfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
+      <a href="#home"  class="p1"> Home</a>
+      <a href="#about1"  class="p1">About</a>
+      <a href="#project1"  class="p1" >Project</a>
+      <a href="#contact"   class="p1" >Contact</a>
     </nav>
   </header>
   <section id="home" 
         class="op">
         <div  class="jm">
       <div class="name">
-      <h2 class="po">Hello,stanger!</h2>
+      <h2 class="po">Hello Stanger!</h2>
       <h1 class="jk">I'M MUSHARAF SADHIK</h1>
       <div class="container">
         <span class="first-text">I'M FSSA</span>
@@ -553,7 +589,7 @@ font-size: small;
 </div>
     
   
-  <section   id="protfolio"           class="sa">
+  <section   id="project1"           class="sa">
    <div> <h2 class="prot">project</h2>
  <img src="./assets/Screenshot 2024-09-18 191825.png" width="150px" class="va"      alt=""> </div>
     <div class="pgrid">
@@ -562,9 +598,9 @@ font-size: small;
 
       </div>
     </div>
-      <div class="project"><img src="./assets/Screenshot 2024-09-21 140248.png"   class="pro"            width="300px"   height="200px"                 alt=""></div>
+      <div class="project"><img src="./assets/Screenshot 2024-09-21 140248.png"   class="pro"            width="300px"   height="200px"    alt=""></div>
       <div class="project"><img src="./assets/Blue White and Red Scrapbook Recycling Fashion Campaign Poster (3).png"   width="300px"  class="pro"              height="200px"                       alt=""></div>
-      <div class="project"><img src="./assets/image (1).png"       class="pro"            width="300px"   height="200px"                                                                                alt="">               </div>
+      <div class="project"><img src="./assets/image (1).png"       class="pro"            width="300px"   height="200px"                                                                                alt="">  </div>
 
 
     </div>
@@ -602,7 +638,7 @@ font-size: small;
       </div>
       </form>
       <footer class="fr">      <div class="footer">               <div class="p">
-         <p class="of">   ProperTheme &copy; 2017. All Rights Reserved.</p></div>
+         <p class="of">   Created by Musharaf.</p></div>
          <div class="icons">
     
        <a href="https://m.facebook.com/profile.php?id=61550569506875&name=xhp_nt__fb__action__open_user"><i class="fa-brands fa-facebook-f"  id="icon"    style="color: #f7f7f7; "     ></i></a>
